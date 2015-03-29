@@ -1,0 +1,108 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+.background {
+	left: 0;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+header {
+	margin-bottom: 10px;
+}
+.open {
+	background-color: rgba(8, 89, 154, 1);
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+}
+.close {
+	background-color: rgba(8, 89, 154, 1);
+	color: #fff;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 5px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.intro, .peeking {
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+		-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	display: none;
+	left: 10%;
+	padding: 5%;
+	position: absolute;
+	top: 10%;
+	width: 70%;
+	z-index: 40;
+}
+h1 {
+	font-family: 'Kranky', cursive;   /* Kranky OR UnifrakturMaguntia */
+}
+.intro p {
+	line-height: 1.5em;
+	text-align: justify;
+}
+.card, .intro-card {
+	border: 1px solid #000;
+	cursor: pointer;
+	display: inline-block;
+	height: 174px;
+	margin: 5px;
+	overflow: hidden;
+	position: relative;
+	text-align: justify;
+	width: 290px;
+}
+.factoid {
+	background-color: rgba(180, 204, 230, 1);
+	display: none;  /* Initial state */
+	font-family: sans-serif;
+	font-size: 1em;
+	height: 134px;
+	line-height: 1.5em;
+	overflow: scroll;
+	padding: 20px;
+	width: 250px;
+}
+.year {
+	color: #fff;
+	display: none;
+	font-weight: bold;
+	left: 20px;
+	position: absolute;
+	top: 20px;
+}
+
+
+
+
+
+@media (min-width: 1025px) {
+	.background {
+		width: 1680px;
+	}
+	.intro {
+		padding: 2%;
+		width: 76%;
+	}
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+	.intro {
+		padding: 3%;
+		width: 74%;
+	}
+}
+@media (max-width: 768px) {
+	.intro {
+		padding: 5%;
+		width: 70%;
+	}
+}
